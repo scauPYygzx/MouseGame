@@ -1,0 +1,33 @@
+#pos, radius, color
+self.starting = [[40, 300], 10, (255, 0, 0)]
+self.speed = 10
+self.target = [[400, 335], 15, (0, 255, 0)]
+
+#round info
+self.round = 2
+
+#blocks
+self.blocks = []
+self.blocks.append([2, [100, 20, 50, 50],(0, 0, 0), [0, 8],[100, 500], [100, 20]])
+from math import cos, sin, radians
+x, y = 500, 355
+for i in range(10, 80, 15):
+	rad = radians(i)
+	xx = int((x - 400) * cos(rad) - (y - 355) * sin(rad) + 400)
+	yy = int((x - 400) * sin(rad) + (y - 355) * cos(rad) + 355)
+	self.blocks.append([3, [xx, yy], 15, (100, 0, 0), (400, 355), 3, 0, [deepcopy(xx), deepcopy(yy)]])
+for i in range(100, 170, 15):
+	rad = radians(i)
+	xx = int((x - 400) * cos(rad) - (y - 355) * sin(rad) + 400)
+	yy = int((x - 400) * sin(rad) + (y - 355) * cos(rad) + 355)
+	self.blocks.append([3, [xx, yy], 15, (100, 0, 0), (400, 355), 3, 0, [deepcopy(xx), deepcopy(yy)]])
+for i in range(190, 260, 15):
+	rad = radians(i)
+	xx = int((x - 400) * cos(rad) - (y - 355) * sin(rad) + 400)
+	yy = int((x - 400) * sin(rad) + (y - 355) * cos(rad) + 355)
+	self.blocks.append([3, [xx, yy], 15, (100, 0, 0), (400, 355), 3, 0, [deepcopy(xx), deepcopy(yy)]])
+for i in range(280, 350, 15):
+	rad = radians(i)
+	xx = int((x - 400) * cos(rad) - (y - 355) * sin(rad) + 400)
+	yy = int((x - 400) * sin(rad) + (y - 355) * cos(rad) + 355)
+	self.blocks.append([3, [xx, yy], 15, (100, 0, 0), (400, 355), 3, 0, [deepcopy(xx), deepcopy(yy)]])

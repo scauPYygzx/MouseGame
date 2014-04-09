@@ -1,0 +1,13 @@
+#pos, radius, color
+self.starting = [[40, 300], 10, (255, 0, 0)]
+self.speed = 10
+self.target = [[750, 300], 15, (0, 255, 0)]
+
+#round info
+self.round = 1
+
+#blocks
+self.blocks = []
+self.blocks.append([0, (300, 250, 50, 50), (0, 155, 155)])
+self.blocks.append([1, (500, 450), 50, (155, 55, 155)])
+self.blocks.append([2, [100, 50, 50, 50],(0, 0, 0), [0, 5],[100, 500], [100, 20]])
